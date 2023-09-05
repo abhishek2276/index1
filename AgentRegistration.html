@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Sidebar Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        .h{
+            display: flex;
+            height: 100vh;
+
+        }
+
+        .sidebar {
+            width: 15%;
+            background-color: rgb(230, 225, 217);
+            color: rgb(239, 234, 234);
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            padding-top: 40px;
+        }
+
+        h2{
+            color: black;
+        }
+        .content {
+            margin-left: 20%; /* Adjust margin to make space for the fixed sidebar */
+            padding: 20px;
+        
+        }
+
+        /* Style the buttons in the sidebar */
+        .sidebar button {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10%;
+        }
+
+        /* Style the content sections */
+      
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed; /* Fixed position at the top */
+            width: 100%; /* Take up the full width of the viewport */
+            z-index: 1; /* Ensure the navbar is above other content */
+        }
+    .navbar-logo a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar-logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+    .content-section {
+        padding-top: 35px; /* Add padding equal to navbar height to push content down */
+            padding: 35px;
+
+        }
+        /* Show the selected content section */
+        .active-section {
+            display: block;
+        }
+        button a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo" ><a href="file:///C:/Users/Santhosh/Desktop/p/Index.html">INDEX</a></div>
+       
+        </div>
+      </div>
+      <div class="h">
+    <div class="sidebar">
+    <center><h2>Agent Registration</h2></center>
+        <button  ><a href="#section1">Content</a></button>
+        <button ><a href="#section2">Wire Frames</a></button>
+        <button ><a href="#section3">Technologies</a></button>
+    </div>
+    <div class="content">
+        <div class="content-section" id="section1">
+          <center>  <h2>Content</h2></center>
+
+            <p>                  <center><span class="" style="background-color: yellow;"> Agent Registration</span></center><br><br>
+               <b style="float: right;"> Page No. 4.A.1</b><br><br>
+                Suppose a truck owner needs to register a new agent,
+                The truck owner has choose Agent registration<br><br>
+                In agent registration page<br><br>
+                1. Agent type in this field we need Drop & Drag
+                Once Drop there is need to show 3 options <br><br>
+                A. Prepaid<br><br>
+                B. Post paid<br><br>
+                C. Prepaid/Post Paid<br><br>
+                2. Agent Name - In this agent name field needs 0 to 40 letters with space. (in the owner 
+                name field - Every first letter Start with Uppercase after that need to lowercase and after 
+                every space start with Uppercase )<br><br>
+                Ex :- Peerugalla Nagendra Varma<br><br>
+                3. Email Field in this field we need (abcdefghijklmn@gmail.com or @yahoo.com or 
+                @rediffmail.com or @hotmail.com)<br><br>
+                4. Aadhar number field. In this field need 12 numeric only. Every after four numeric we need 
+                space. (We are Thinking API For Automatic getting information as per Aadhar Card)<br><br>
+                Ex:- XXXX XXXX XXXX<br><br>
+                5. Upload Aadhar card - Choose File - Camera - Gallery - Document - File Manager ( size)<br><br>
+                6. Pan Card Number - In this field Need First 5 Letters Uppercase after 4 numeric and last 
+                one upper case. (We are Thinking API For Automatic getting information as per Pan Card)<br><br>
+                Ex:- (ABCDE0000A)<br><br>
+                7. Upload Pan Card - Choose File - Camera - Gallery - Document - File Manager ( size)
+                Address<br><br>
+                A. Door No - In this field need numeric, special characters and letters<br><br>
+                Ex:- 13/11-A (or) 11-11-A (or) 13/11 (or) 13/11-0A (or) 13/11-1234<br><br>
+                B. Street - In this field need 40 letters (Every first letter Start with Uppercase after that we 
+                need to lowercase and after every space start with Uppercase)<br><br>
+                Ex:- Addagutta Society<br><br>
+                <b style="float: right;"> Page No. 4.A.2</b><br><br>
+                C. Land Mark - In this field need 40 letters (Every first letter Start with Uppercase after that 
+                we need to lowercase and after every space start with Uppercase)<br><br>
+                Ex:- Opp (or) Nearby (or) Beside (or) Front (or) Back<br><br>
+                D. Village/ Town - In this field need 40 letters (Every first letter Start with Uppercase after 
+                that we need to lowercase and after every space start with Uppercase)<br><br>
+                Ex:- Kukatpally<br><br>
+                E. Pincode - In this field need 6 Numeric (000000) after enter Pincode Mandal, District and 
+                State automatically filled<br><br>
+                In Mandal, District and State fields need to use API Pincode Gateways<br><br>
+                F. Mandal (after enter pincode Mandal field was need to automatically filled)<br><br>
+                G. District (after enter pincode District field was need to automatically filled)<br><br>
+                H. State (after enter pincode State field was need to automatically filled)<br><br>
+              <center> 8. Edit<br><br>
+                9. Save<br><br></center> 
+            </p>
+        </div>
+        <div class="content-section" id="section2">
+          <center>  <h2>Wire Frames</h2></center>
+            <p>               <img src="C:\Users\Santhosh\Pictures\Screenshots\Screenshot 2023-09-05 104443.png" width="100%" height="500%">
+            </p>
+        </div>
+        <div class="content-section" id="section3">
+            <center>  <h2>Technologies</h2></center>
+            <p> <p>Tool :<b>VS Code</b></p>
+            <ol>
+                <li>HTML</li><br>
+                <li>CSS</li><br>
+                <li>Java Script</li>
+            </ol>
+            </p>
+        </div>
+    </div>
+</div>
+
+    <!-- <script>
+        function showSection(sectionId) {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+            });
+
+            // Show the selected content section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active-section');
+        }
+    </script> -->
+</body>
+</html>

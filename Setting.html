@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Sidebar Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        .h{
+            display: flex;
+            height: 100vh;
+
+        }
+
+        .sidebar {
+            width: 15%;
+            background-color: rgb(230, 225, 217);
+            color: rgb(239, 234, 234);
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            padding-top: 40px;
+        }
+
+        h2{
+            color: black;
+        }
+        .content {
+            margin-left: 20%; /* Adjust margin to make space for the fixed sidebar */
+            padding: 20px;
+        
+        }
+
+        /* Style the buttons in the sidebar */
+        .sidebar button {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10%;
+        }
+
+        /* Style the content sections */
+      
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed; /* Fixed position at the top */
+            width: 100%; /* Take up the full width of the viewport */
+            z-index: 1; /* Ensure the navbar is above other content */
+        }
+    .navbar-logo a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar-logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+    .content-section {
+        padding-top: 35px; /* Add padding equal to navbar height to push content down */
+            padding: 35px;
+
+        }
+        /* Show the selected content section */
+        .active-section {
+            display: block;
+        }
+        button a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo" ><a href="file:///C:/Users/Santhosh/Desktop/p/Index.html">INDEX</a></div>
+       
+        </div>
+      </div>
+      <div class="h">
+    <div class="sidebar">
+    <center><h2>Settings</h2></center>
+        <button  ><a href="#section1">Content</a></button>
+        <button ><a href="#section2">Wire Frames</a></button>
+        <button ><a href="#section3">Technologies</a></button>
+    </div>
+    <div class="content">
+        <div class="content-section" id="section1">
+          <center>  <h2>Content</h2></center>
+
+            <p>This is the content of Section 1.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium adipisci commodi nesciunt qui. Recusandae error pariatur deleniti soluta molestias libero esse aspernatur numquam autem quibusdam, illo, corporis corrupti architecto!BR
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+
+            </p>
+        </div>
+        <div class="content-section" id="section2">
+          <center>  <h2>Wire Frames</h2></center>
+            <p>This is the content of Section 2.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+
+            </p>
+        </div>
+        <div class="content-section" id="section3">
+            <center>  <h2>Technologies</h2></center>
+            <p>This is the content of Section 3.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore expedita quas iusto tempore consectetur autem impedit assumenda, tempora distinctio molestias non sint quia accusantium voluptatum odio amet consequatur facere. Obcaecati.<br><br><br>
+
+            </p>
+        </div>
+    </div>
+</div>
+
+    <!-- <script>
+        function showSection(sectionId) {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+            });
+
+            // Show the selected content section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active-section');
+        }
+    </script> -->
+</body>
+</html>

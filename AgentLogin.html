@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Sidebar Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        .h{
+            display: flex;
+            height: 100vh;
+
+        }
+
+        .sidebar {
+            width: 15%;
+            background-color: rgb(230, 225, 217);
+            color: rgb(239, 234, 234);
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            padding-top: 40px;
+        }
+
+        h2{
+            color: black;
+        }
+        .content {
+            margin-left: 20%; /* Adjust margin to make space for the fixed sidebar */
+            padding: 20px;
+        
+        }
+
+        /* Style the buttons in the sidebar */
+        .sidebar button {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10%;
+        }
+
+        /* Style the content sections */
+      
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed; /* Fixed position at the top */
+            width: 100%; /* Take up the full width of the viewport */
+            z-index: 1; /* Ensure the navbar is above other content */
+        }
+    .navbar-logo a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar-logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+    .content-section {
+        padding-top: 35px; /* Add padding equal to navbar height to push content down */
+            padding: 35px;
+
+        }
+        /* Show the selected content section */
+        .active-section {
+            display: block;
+        }
+        button a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo" ><a href="file:///C:/Users/Santhosh/Desktop/p/Index.html">INDEX</a></div>
+       
+        </div>
+      </div>
+      <div class="h">
+    <div class="sidebar">
+    <center><h2>Agent Login</h2></center>
+        <button  ><a href="#section1">Content</a></button>
+        <button ><a href="#section2">Wire Frames</a></button>
+        <button ><a href="#section3">Technologies</a></button>
+    </div>
+    <div class="content">
+        <div class="content-section" id="section1">
+          <center>  <h2>Content</h2></center>
+
+               <center><span class="" style="background-color: yellow;">Agent Log In</span> </center><br>
+               <p><b style="float: right;">Page No. 5.1</b><br><br>
+
+                1.In Agent Login Page
+                Need to login Agent ID and Password (Or) Pass Code (Or) Finger Print<br><br>
+                2.In web application Login with Password only<br><br>
+                3.In Android & iOS login with Password (Or) Pass Code (Or) Finger Print<br><br>
+                i.Agent Dash Board<br><br>
+                ii.Once agent was login<br><br>
+                iii.Once candidate was book truck<br><br>
+            -> There is need from location, to location, date fields<br><br>
+                -> If suppose candidate was prepaid candidate go to payment page<br><br>
+                -> If suppose candidate was post-paid candidate go to booking details page<br><br>
+                <p><b style="float: right;">Page No. 5.2</b><br><br>         
+                    <center><span class="" style="background-color: yellow;">Agent Dash Board</span></center>  <br>
+                        1. Once agent was login<br><br>
+                2.Once candidate was book truck<br><br>
+                3.There is need from location, to location, date fields<br><br>
+                4.If suppose candidate was prepaid candidate go to payment page<br><br>
+                5.If suppose candidate was post-paid candidate go to booking details page<br><br>
+                <center><span class="" style="background-color: yellow;">Agent - Bookings</span> </center><br><br>
+                In Agent bookings there is need fields<br><br>
+                1. Change Booking Date<br><br>
+                2. Cancel Booking<br><br>
+                3. Print Booking<br><br>
+                4. Show My Bookings<br><br>
+                5. Truck Tracking<br><br>
+                1. In Change Booking date if suppose agent was need to
+                change booking date go to this field and change
+                booking date<br><br>
+                2. If suppose agent was goes to cancel bookings go to this
+                field need to cancel booking<br><br>
+                3. If suppose agent needs to print bookings go to print
+                booking page is here to give Particular date to
+                particular date or invoice drop & drag and select and
+                go to checking all those details and take prints<br><br>
+                4. Show My Bookings - agent select show my bookings
+                Need to show date wise or invoice wise ( drop & drag)
+                bookings history<br><br>
+                5. Truck Tracking - In this need Drop & Drag (Registration
+                Number) - Visible Booking trucks registrations numbers
+                only. Need GPS Tracking<br><br>
+                </p>
+        </div>
+        <div class="content-section" id="section2">
+          <center>  <h2>Wire Frames</h2></center>
+            <p>
+                <img src="C:\Users\Santhosh\Pictures\Screenshots\Screenshot 2023-08-31 125249.png" width="100%" height="500%"><br>
+                <center><b>Agent Login Page</b></center><br><br>
+                <img src="C:\Users\Santhosh\Pictures\Screenshots\Screenshot 2023-09-05 110645.png" width="100%" height="500%"><br><br>
+                <center><b>Agent Dash Board</b></center><br><br>
+                <img src="C:\Users\Santhosh\Pictures\Screenshots\Screenshot 2023-09-01 093432.png" width="100%" height="500%"><br>
+                <center><b>Agent My Bookings Page</b></center><br>
+                <br>
+
+            </p>
+        </div>
+        <div class="content-section" id="section3">
+            <center>  <h2>Technologies</h2></center>
+            <p>Tool :<b>VS Code</b></p>
+            <ol>
+                <li>HTML</li><br>
+                <li>CSS</li><br>
+                <li>Java Script</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+    <!-- <script>
+        function showSection(sectionId) {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+            });
+
+            // Show the selected content section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active-section');
+        }
+    </script> -->
+</body>
+</html>
